@@ -13,7 +13,6 @@ Backend - Express + Node + MongoDB
 2. Execute the following commands:
 
     i. Install node modules (client side: frontend)
-
        ```
 
        cd .\client\
@@ -23,7 +22,6 @@ Backend - Express + Node + MongoDB
        cd ..
 
        ```
-       
     ii.Install node modules (Server side: backend)
         ```
 
@@ -34,7 +32,6 @@ Backend - Express + Node + MongoDB
        cd ..
     
        ```
-
     iii. start the server
         1. open the another tab of the terminal.
         2. run the below command:  
@@ -45,15 +42,15 @@ Backend - Express + Node + MongoDB
             npm run start
 
             ```
-    
     iv. run the application
         1. open the another tab of the terminal.
         2. run the below command:   
             ```
+            
             cd .\client\
 
             npm run dev
-            
+
             ```
         3. ctrl + click on the Local link shown in the terminal.
 
