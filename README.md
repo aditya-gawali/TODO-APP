@@ -17,9 +17,16 @@ Backend - Express + Node + MongoDB
        cd .\client\
 
        npm i
-       
+
        cd ..
        ```
+
+       ```
+git status
+git add
+git commit
+```
+
     ii.Install node modules (Server side: backend)
         ```
 
