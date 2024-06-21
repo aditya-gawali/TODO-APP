@@ -14,13 +14,11 @@ Backend - Express + Node + MongoDB
 
     i. Install node modules (client side: frontend)
        ```
-
        cd .\client\
 
        npm i
-
+       
        cd ..
-
        ```
     ii.Install node modules (Server side: backend)
         ```
@@ -46,7 +44,7 @@ Backend - Express + Node + MongoDB
         1. open the another tab of the terminal.
         2. run the below command:   
             ```
-            
+
             cd .\client\
 
             npm run dev
