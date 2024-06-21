@@ -1,6 +1,7 @@
 {
   "name": "client",
   "private": true,
+  "homepage": "https://growrichway.in/Todo",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,7 +12,10 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router": "^6.23.1",
+    "react-router-dom": "^6.23.1",
+    "remixicon": "^4.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
