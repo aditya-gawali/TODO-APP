@@ -11,7 +11,7 @@ const Todo = () => {
     const submitHandler = async (e) => {
         e.preventDefault();
 
-        const response = await fetch("http://localhost:3000/api/todo", {
+        const response = await fetch("https://todo-app-backend-9uh4.onrender.com/api/todo", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -30,14 +30,14 @@ const Todo = () => {
     }
 
     const fetchTask = async () => {
-        const res = await fetch("http://localhost:3000/api/todo");
+        const res = await fetch("https://todo-app-backend-9uh4.onrender.com/api/todo");
         const data = await res.json();
         await setGetTask(data);
     }
 
     const deleteHandler = async (e) => {
         // if (confirm("Are you sure to delete..")) {
-        const deleteTask = await fetch(`http://localhost:3000/api/todo/${e.target.id}`, {
+        const deleteTask = await fetch(`https://todo-app-backend-9uh4.onrender.com/api/todo/${e.target.id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

@@ -7,7 +7,7 @@ const Modal = ({ id, close }) => {
 
 
     const fetchSingleTask = async () => {
-        const res = await fetch(`http://localhost:3000/api/todo/${id}`);
+        const res = await fetch(`https://todo-app-backend-9uh4.onrender.com/api/todo/${id}`);
         const data = await res.json();
         await setGetTask(data);
         await setTask(data.task);
@@ -22,7 +22,7 @@ const Modal = ({ id, close }) => {
 
     const updateHandler = async (e) => {
         e.preventDefault();
-        const response = await fetch(`http://localhost:3000/api/todo/${id}`, {
+        const response = await fetch(`https://todo-app-backend-9uh4.onrender.com/api/todo/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
