@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import { PORT } from '../constants/index.constants.js';
 import { DB_URL } from '../constants/index.constants.js';
 import todoRouter from '../routers/todo.routes.js';
+import 'dotenv/config';
 
 const app = express();
 
@@ -14,7 +15,7 @@ app.use(express.json());
 app.use(todoRouter);
 
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`Server is running on Port - ${PORT}`)
 })
 
