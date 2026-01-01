@@ -50,7 +50,7 @@ const Todo = () => {
     useEffect(() => {
         fetchTask();
 
-    }, [task, setTask, deleteHandler]);
+    }, [setTask, deleteHandler]);
 
     const openModal = (e) => {
         setModal(true)
